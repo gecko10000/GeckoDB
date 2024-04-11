@@ -21,6 +21,7 @@ dependencies {
     api("org.jetbrains.xodus:xodus-openAPI:2.0.1")
     api("org.jetbrains.xodus:xodus-environment:2.0.1")
     api("org.jetbrains.xodus:xodus-entity-store:2.0.1")
+    compileOnly("org.apache.logging.log4j:log4j-core:2.23.1")
 }
 
 tasks.withType<JavaCompile> {
