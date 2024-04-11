@@ -18,9 +18,15 @@ dependencies {
 
     compileOnly("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
 
-    api("org.jetbrains.xodus:xodus-openAPI:2.0.1")
-    api("org.jetbrains.xodus:xodus-environment:2.0.1")
-    api("org.jetbrains.xodus:xodus-entity-store:2.0.1")
+    api("org.jetbrains.xodus:xodus-openAPI:2.0.1") {
+        exclude("org.jetbrains.kotlin")
+    }
+    api("org.jetbrains.xodus:xodus-environment:2.0.1") {
+        exclude("org.jetbrains.kotlin")
+    }
+    api("org.jetbrains.xodus:xodus-entity-store:2.0.1") {
+        exclude("org.jetbrains.kotlin")
+    }
     compileOnly("org.apache.logging.log4j:log4j-core:2.23.1")
 }
 
